@@ -150,6 +150,7 @@ namespace kordex::runtime
     config.allow_net = options.allow_net;
     config.allow_process = options.allow_process;
     config.allow_env = options.allow_env;
+    config.allow_softadastra = options.allow_softadastra;
 
     config.diagnostics = options.diagnostics;
     config.debug = options.debug;
@@ -232,6 +233,10 @@ namespace kordex::runtime
     config.allow_env = env_bool_or(
         "KORDEX_ALLOW_ENV",
         config.allow_env);
+
+    config.allow_softadastra = env_bool_or(
+        "KORDEX_ALLOW_SOFTADASTRA",
+        config.allow_softadastra);
 
     config.diagnostics = env_bool_or(
         "KORDEX_DIAGNOSTICS",

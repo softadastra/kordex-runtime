@@ -117,6 +117,11 @@ namespace kordex::runtime
     bool allow_env{true};
 
     /**
+     * @brief Whether Softadastra runtime integration is allowed.
+     */
+    bool allow_softadastra{false};
+
+    /**
      * @brief Whether diagnostics are enabled.
      */
     bool diagnostics{true};

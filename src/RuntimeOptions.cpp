@@ -32,6 +32,7 @@ namespace kordex::runtime
     options.allow_net = true;
     options.allow_process = true;
     options.allow_env = true;
+    options.allow_softadastra = true;
     options.diagnostics = true;
     options.debug = true;
     return options;
@@ -46,6 +47,7 @@ namespace kordex::runtime
     options.allow_net = false;
     options.allow_process = false;
     options.allow_env = true;
+    options.allow_softadastra = false;
     options.diagnostics = true;
     options.debug = false;
     return options;
@@ -60,6 +62,7 @@ namespace kordex::runtime
     options.allow_net = false;
     options.allow_process = false;
     options.allow_env = true;
+    options.allow_softadastra = false;
     options.diagnostics = true;
     options.debug = true;
     options.timeout = Clock::seconds(30);

@@ -51,6 +51,7 @@ namespace kordex::runtime
     bool allow_net{false};
     bool allow_process{false};
     bool allow_env{true};
+    bool allow_softadastra{false};
 
     bool diagnostics{true};
     bool debug{false};
